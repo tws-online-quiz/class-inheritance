@@ -1,15 +1,15 @@
-const main = require('../main/main');
+const Person = require('../main/person');
+const Student = require('../main/student');
 
 describe('main()', () => {
 
-    it('should console log "Debug Info"', () => {
-        spyOn(console, 'log');
-        main();
-        expect(console.log).toHaveBeenCalledWith('Debug Info');
+    it('should introduce person', () => {
+      let person = new Person('Tom', 21);
+      expect(person.introduce()).toBe("My name is Tom. I am 21 years old.");
     });
 
-    it('should return "Hello World!"', () => {
-        let actual = main();
-        expect(actual).toBe('Hello World!');
+    it('should introduce student', () => {
+      let student = new Student('Tom', 21, 2);
+      expect(person.introduce()).toBe("My name is Tom. I am 21 years old. I am a Student. I am at Class 2.");
     });
 });
