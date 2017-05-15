@@ -29,7 +29,7 @@ NOTE：如果提示git命令未找到请先阅读参考资料
 spec  //测试文件夹
 src   //源文件
 ```
-`请在src文件下的main.js文件内实现main函数`
+`请在src文件下的person.js和student.js文件内实现`
 
 - 完成函数后，使用以下命令设置github远程仓库地址 (my_url代表你自己的新的github地址)
 ```
